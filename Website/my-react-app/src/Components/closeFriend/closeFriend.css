@@ -1,0 +1,31 @@
+.sidebarFriend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sidebarFriendImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.sidebarFriendName{
+  font-size: 15px;
+  font-family: roboto;
+  font-weight: 600;
+  color: #444; /* Slightly softer dark color for base */
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+}
+.sidebarFriendName:hover{
+  color: #ff7f50; /* Warm coral color for hover */
+  transform: translateX(5px); /* Small shift for emphasis */
+ 
+}
+.closeFriendUsername:active {
+  color: #e06a3b; /* Darker coral for active click effect */
+  transform: scale(0.98); /* Slightly pressed effect */
+}

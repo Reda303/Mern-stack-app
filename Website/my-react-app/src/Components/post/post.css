@@ -1,0 +1,127 @@
+.post {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0;
+  
+}
+.postTop {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Pushes left and right sections apart */
+ 
+}
+.postWrapper{
+  padding: 10px;
+}
+
+.postTopLeft{
+  display: flex;
+  align-items: center;
+}
+.postProfileName{
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 550;
+  margin-left: 10px;
+  cursor: pointer;
+  
+
+}
+.postTime{
+  font-size: 12px;
+  color: rgba(86, 86, 86, 0.679);
+  margin-left: 12px;
+  
+}
+.postProfileImg{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 17px;
+  cursor: pointer;
+}
+.optionLogo{
+  cursor: pointer;
+}
+.postCenter{
+  margin-top: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  height: 100%; /* Adjust based on your layout */
+  
+
+}
+.postTitle{
+ font-size: 16px;
+ align-self: flex-start; /* Aligns title to the left */
+ margin-bottom: 15px; /* Adds space between title and image */
+ margin-left: 8px;
+}
+.postImg{
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: filter 0.4s ease;
+
+}
+.postImg:hover{
+  filter: brightness(0.8); /* Makes it slightly darker */
+}
+
+.likeimg{
+  height: 24px;
+  width: 24px;
+  margin-left: 3px;
+  margin-right: 3px;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+.likeimg:hover {
+  transform: translateY(-4px); /* triggers the bounce animation */
+}
+.likeimg:active {
+  transform: scale(1.5); /* zoom in like button */
+  transition: transform 0.1s ease;
+}
+.postLikeStats{
+  font-size: 15px;
+  margin-left: 5px;
+}
+.postBottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.postBottomLeft{
+  display: flex;
+  align-items: center;
+}
+.postBottomRight{
+  display: inline-block; /* Allows padding and border */
+  padding: 5px 10px; /* Adjust padding for size */
+  border: 1px solid grey; /* Light grey border for outline */
+  border-radius: 20px; /* Rounded corners */
+  color: grey; /* Text color to match the border */
+  font-size: 14px; /* Adjust font size as needed */
+  font-weight: 500; /* Semi-bold for visibility */
+  background-color: #f9f9f9; /* Light grey background, optional */
+  cursor: pointer;
+  transition: 0.5s;
+}
+.postBottomRight:hover {
+  background-color: #1292d7; /* Warm coral tone for a more vibrant effect */
+  color: #fff3e0;
+  transform: scale(1.1);
+}
+.postBottomRight:active{
+  transform: scale(0.8);
+}
